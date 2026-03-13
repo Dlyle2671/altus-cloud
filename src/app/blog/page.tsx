@@ -2,62 +2,62 @@ import Link from 'next/link';
 
 const posts = [
   {
-    slug: 'finops-framework-beginners-guide',
-    category: 'FinOps',
-    date: 'February 2026',
-    readTime: '8 min read',
-    title: 'The FinOps Framework: A Beginner's Guide for Engineering Teams',
+    slug: "finops-framework-beginners-guide",
+    category: "FinOps",
+    date: "February 2026",
+    readTime: "8 min read",
+    title: "The FinOps Framework: A Beginner's Guide for Engineering Teams",
     excerpt:
-      'Cloud costs are a shared responsibility, yet most companies treat them as a finance problem. Learn how the FinOps Foundation framework helps bridge the gap between engineering and finance.',
+      "Cloud costs are a shared responsibility, yet most companies treat them as a finance problem. Learn how the FinOps Foundation framework helps bridge the gap between engineering and finance.",
   },
   {
-    slug: 'aws-savings-plans-vs-reserved-instances',
-    category: 'Cost Optimization',
-    date: 'January 2026',
-    readTime: '6 min read',
-    title: 'AWS Savings Plans vs. Reserved Instances: Which Should You Choose?',
+    slug: "aws-savings-plans-vs-reserved-instances",
+    category: "Cost Optimization",
+    date: "January 2026",
+    readTime: "6 min read",
+    title: "AWS Savings Plans vs. Reserved Instances: Which Should You Choose?",
     excerpt:
-      'Both commitment-based pricing models can cut your EC2 and Fargate costs by up to 72%, but they work very differently. Here's how to pick the right strategy for your workload.',
+      "Both commitment-based pricing models can cut your EC2 and Fargate costs by up to 72%, but they work very differently. Here's how to pick the right strategy for your workload.",
   },
   {
-    slug: 'cloud-unit-economics-guide',
-    category: 'FinOps',
-    date: 'December 2025',
-    readTime: '10 min read',
-    title: 'Understanding Cloud Unit Economics: Cost Per Customer, Transaction, and Feature',
+    slug: "cloud-unit-economics-guide",
+    category: "FinOps",
+    date: "December 2025",
+    readTime: "10 min read",
+    title: "Understanding Cloud Unit Economics: Cost Per Customer, Transaction, and Feature",
     excerpt:
-      'Unit economics translate raw AWS bills into actionable business metrics. This guide shows you how to build a cost-per-unit model that your entire organization can align on.',
+      "Unit economics translate raw AWS bills into actionable business metrics. This guide shows you how to build a cost-per-unit model that your entire organization can align on.",
   },
   {
-    slug: 'aws-cost-anomaly-detection',
-    category: 'AWS Tools',
-    date: 'November 2025',
-    readTime: '5 min read',
-    title: 'Setting Up AWS Cost Anomaly Detection: A Step-by-Step Guide',
+    slug: "aws-cost-anomaly-detection",
+    category: "AWS Tools",
+    date: "November 2025",
+    readTime: "5 min read",
+    title: "Setting Up AWS Cost Anomaly Detection: A Step-by-Step Guide",
     excerpt:
-      'AWS Cost Anomaly Detection uses ML to flag unexpected spend before it becomes a crisis. Learn how to configure monitors and alerts in under 30 minutes.',
+      "AWS Cost Anomaly Detection uses ML to flag unexpected spend before it becomes a crisis. Learn how to configure monitors and alerts in under 30 minutes.",
   },
   {
-    slug: 'rightsizing-ec2-guide',
-    category: 'Cost Optimization',
-    date: 'October 2025',
-    readTime: '7 min read',
-    title: 'EC2 Rightsizing in Practice: How We Cut a Client's Compute Bill by 42%',
+    slug: "rightsizing-ec2-guide",
+    category: "Cost Optimization",
+    date: "October 2025",
+    readTime: "7 min read",
+    title: "EC2 Rightsizing in Practice: How We Cut a Client's Compute Bill by 42%",
     excerpt:
-      'Rightsizing is one of the highest-ROI activities in cloud cost optimization — and one of the most commonly ignored. Here's our proven methodology with real numbers.',
+      "Rightsizing is one of the highest-ROI activities in cloud cost optimization and one of the most commonly ignored. Here is our proven methodology with real numbers.",
   },
   {
-    slug: 'aws-landing-zone-enterprise',
-    category: 'Architecture',
-    date: 'September 2025',
-    readTime: '9 min read',
-    title: 'Building an Enterprise AWS Landing Zone with Control Tower',
+    slug: "aws-landing-zone-enterprise",
+    category: "Architecture",
+    date: "September 2025",
+    readTime: "9 min read",
+    title: "Building an Enterprise AWS Landing Zone with Control Tower",
     excerpt:
-      'A well-designed landing zone is the foundation of every successful cloud program. This post walks through our opinionated approach to multi-account architecture for growing companies.',
+      "A well-designed landing zone is the foundation of every successful cloud program. This post walks through our opinionated approach to multi-account architecture for growing companies.",
   },
 ];
 
-const categories = ['All', 'FinOps', 'Cost Optimization', 'AWS Tools', 'Architecture'];
+const categories = ["All", "FinOps", "Cost Optimization", "AWS Tools", "Architecture"];
 
 export default function BlogPage() {
   return (
@@ -68,22 +68,21 @@ export default function BlogPage() {
           <p className="text-altus-sky font-semibold tracking-widest uppercase text-sm mb-3">Insights</p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Cloud Intelligence, Delivered</h1>
           <p className="text-blue-200 text-lg">
-            Practical guides, deep dives, and case studies from the Altus Cloud team — built for engineering leaders and finance teams who care about cloud ROI.
+            Practical guides, deep dives, and case studies from the Altus Cloud team built for engineering leaders and finance teams who care about cloud ROI.
           </p>
         </div>
       </section>
 
-      {/* Category filter — static display */}
+      {/* Category filter */}
       <section className="bg-dark border-b border-white/10 sticky top-16 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center gap-3 py-4 overflow-x-auto">
           {categories.map((cat, i) => (
             <button
               key={cat}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors whitespace-nowrap ${
-                i === 0
-                  ? 'bg-altus-sky text-white'
-                  : 'bg-white/5 text-blue-300 border border-white/10 hover:border-altus-sky hover:text-white'
-              }`}
+              className={"px-4 py-2 rounded-full text-sm font-medium transition-colors whitespace-nowrap " +
+                (i === 0
+                  ? "bg-altus-sky text-white"
+                  : "bg-white/5 text-blue-300 border border-white/10 hover:border-altus-sky hover:text-white")}
             >
               {cat}
             </button>
@@ -110,7 +109,7 @@ export default function BlogPage() {
                 <h2 className="text-2xl font-bold text-white mb-4">{posts[0].title}</h2>
                 <p className="text-blue-200 text-sm leading-relaxed mb-6">{posts[0].excerpt}</p>
                 <Link
-                  href={`/blog/${posts[0].slug}`}
+                  href={"/blog/" + posts[0].slug}
                   className="inline-flex items-center gap-2 text-altus-sky hover:text-white text-sm font-semibold transition-colors"
                 >
                   Read Article →
@@ -128,7 +127,7 @@ export default function BlogPage() {
               >
                 <div className="bg-gradient-to-br from-altus-navy/80 to-altus-blue/20 h-32 flex items-center justify-center">
                   <div className="text-3xl">
-                    {post.category === 'FinOps' ? '💰' : post.category === 'Cost Optimization' ? '📉' : post.category === 'AWS Tools' ? '🛠️' : '🏗️'}
+                    {post.category === "FinOps" ? "💰" : post.category === "Cost Optimization" ? "📉" : post.category === "AWS Tools" ? "🛠️" : "🏗️"}
                   </div>
                 </div>
                 <div className="p-6 flex flex-col flex-1">
@@ -142,7 +141,7 @@ export default function BlogPage() {
                   <div className="flex items-center justify-between">
                     <span className="text-blue-500 text-xs">{post.date} · {post.readTime}</span>
                     <Link
-                      href={`/blog/${post.slug}`}
+                      href={"/blog/" + post.slug}
                       className="text-altus-sky hover:text-white text-sm font-medium transition-colors"
                     >
                       Read →
