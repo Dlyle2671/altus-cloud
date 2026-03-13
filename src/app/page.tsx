@@ -8,7 +8,7 @@ const stats = [
   { value: '98%', label: 'Client Retention Rate', sub: 'Year over year' },
 ];
 const services = [
-  { icon: Cloud, title: 'AWS Authorized Reseller', desc: 'Purchase AWS services through us and unlock exclusive pricing, consolidated billing, and dedicated support.', light: 'bg-blue-50', iconColor: 'text-blue-600' },
+  { icon: Cloud, title: 'AWS Authorized Reseller', esc: 'Purchase AWS services through us and unlock exclusive pricing, consolidated billing, and dedicated support.', light: 'bg-blue-50', iconColor: 'text-blue-600' },
   { icon: DollarSign, title: 'FinOps Practice', desc: 'Establish financial accountability for cloud spend with real-time visibility and chargeback models.', light: 'bg-emerald-50', iconColor: 'text-emerald-600' },
   { icon: TrendingDown, title: 'Cost Optimization', desc: 'Rightsize resources, leverage Reserved Instances and Savings Plans, and eliminate waste.', light: 'bg-violet-50', iconColor: 'text-violet-600' },
   { icon: Zap, title: 'Cloud Migration', desc: 'Accelerate your journey to AWS with our proven migration framework, minimizing risk and downtime.', light: 'bg-amber-50', iconColor: 'text-amber-600' },
@@ -40,7 +40,7 @@ export default function Home() {
               Altus Cloud is an AWS Authorized Reseller with a certified FinOps practice. We help engineering and finance teams cut cloud costs by up to 40%.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact?type=assessment" className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl hover:opacity-90 transition-all shadow-lg shadow-blue-200 hover:-translate-y-0.5">
+              <Link href="/contact?type=assessment" className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-white bg-green-500 hover:bg-green-400 rounded-2xl hover:opacity-90 transition-all shadow-lg shadow-green-200 hover:-translate-y-0.5">
                 Get Free Cost Assessment <ArrowRight className="w-5 h-5" />
               </Link>
               <Link href="/services" className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-gray-700 bg-white border border-gray-200 rounded-2xl hover:border-blue-200 hover:text-blue-600 transition-all shadow-sm">
@@ -128,7 +128,7 @@ export default function Home() {
                 ))}
               </ul>
               <div className="mt-8">
-                <Link href="/contact?type=assessment" className="w-full flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-cyan-500 rounded-xl hover:opacity-90 shadow-md shadow-blue-200">
+                <Link href="/contact?type=assessment" className="w-full flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold text-white bg-green-500 hover:bg-green-400 rounded-xl hover:opacity-90 shadow-md shadow-green-200">
                   Start Saving Today <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
