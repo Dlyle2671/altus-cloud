@@ -8,15 +8,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'altus-blue': '#0055B3',
-        'altus-sky': '#0099E6',
-        'altus-navy': '#001B3D',
-        'altus-mint': '#00C49A',
-        'altus-light': '#F5F8FF',
-        'altus-gray': '#64748B',
+        'altus-orange':  '#FF6B00',   // primary CTA orange
+        'altus-amber':   '#FF9A00',   // lighter orange / hover
+        'altus-lime':    '#84CC16',   // lime green accent
+        'altus-lime-bright': '#A3E635', // bright lime for highlights
+        'altus-dark':    '#0F1A0A',   // near-black dark green tint
+        'altus-charcoal':'#1A1F14',   // dark section bg
+        // keep old names as aliases so existing JSX still compiles
+        'altus-blue':    '#FF6B00',
+        'altus-sky':     '#FF9A00',
+        'altus-navy':    '#0F1A0A',
+        'altus-mint':    '#84CC16',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
       },
     },
   },
