@@ -5,10 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 @layer utilities {
-  /* Turquoise-to-lime gradient text */
+  /* Neon cyan-to-lime gradient text */
   .text-gradient {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, #2DD4BF 0%, #A3E635 100%);
+    background-image: linear-gradient(135deg, #00F5FF 0%, #A3E635 100%);
   }
 
   /* Hero section: dark charcoal with subtle teal hint */
@@ -27,7 +27,7 @@
   }
   .card-hover:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(45, 212, 191, 0.22);
+    box-shadow: 0 12px 40px rgba(0, 245, 255, 0.25);
   }
 }
 
