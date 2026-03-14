@@ -24,7 +24,7 @@ export default function Contact() {
       <section className="bg-hero pt-32 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-sm font-semibold text-blue-600 uppercase tracking-widest mb-3">Contact Us</p>
-          <h1 className="text-5xl font-extrabold text-gray-900 mb-4">
+          <h1 className="text-5xl font-extrabold text-[#00F5FF] mb-4">
             Let's Talk About<br /><span className="text-gradient">Your Cloud Costs</span>
           </h1>
           <p className="text-lg text-gray-500 max-w-xl mx-auto">
