@@ -9,9 +9,9 @@ const stats = [
 ];
 
 const services = [
-  { icon: Cloud, title: 'AWS Authorized Reseller', desc: 'Purchase AWS services through us and unlock exclusive pricing, consolidated billing, and dedicated support.', light: 'bg-[#00F5FF]/10', iconColor: 'text-[#00F5FF]' },
+  { icon: Cloud, title: 'AWS Authorized Reseller', desc: 'Purchase AWS services through us and unlock exclusive pricing, consolidated billing, and dedicated support.', light: 'bg-[#2DD4BF]/10', iconColor: 'text-[#2DD4BF]' },
   { icon: DollarSign, title: 'FinOps Practice', desc: 'Establish financial accountability for cloud spend with real-time visibility and chargeback models.', light: 'bg-[#A3E635]/10', iconColor: 'text-[#A3E635]' },
-  { icon: TrendingDown, title: 'Cost Optimization', desc: 'Rightsize resources, leverage Reserved Instances and Savings Plans, and eliminate waste.', light: 'bg-[#00F5FF]/10', iconColor: 'text-[#00F5FF]' },
+  { icon: TrendingDown, title: 'Cost Optimization', desc: 'Rightsize resources, leverage Reserved Instances and Savings Plans, and eliminate waste.', light: 'bg-[#2DD4BF]/10', iconColor: 'text-[#2DD4BF]' },
   { icon: Zap, title: 'Cloud Migration', desc: 'Accelerate your journey to AWS with our proven migration framework, minimizing risk and downtime.', light: 'bg-[#A3E635]/10', iconColor: 'text-[#A3E635]' },
 ];
 
@@ -28,12 +28,12 @@ export default function Home() {
     <>
       <section className="relative min-h-[92vh] flex items-center bg-hero pt-16 overflow-hidden">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#00F5FF]/10 blur-3xl" />
+          <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#2DD4BF]/10 blur-3xl" />
           <div className="absolute top-1/2 -left-24 w-80 h-80 rounded-full bg-[#A3E635]/10 blur-3xl" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#00F5FF]/10 border border-[#00F5FF]/30 text-[#00F5FF] text-sm font-medium mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2DD4BF]/10 border border-[#2DD4BF]/30 text-[#2DD4BF] text-sm font-medium mb-8">
               <Award className="w-4 h-4" />
               AWS Authorized Reseller & Certified FinOps Practice
             </div>
@@ -47,14 +47,14 @@ export default function Home() {
               <Link href="/contact?type=assessment" className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-white bg-green-500 hover:bg-green-400 rounded-2xl hover:opacity-90 transition-all shadow-lg shadow-green-900/30 hover:-translate-y-0.5">
                 Get Free Cost Assessment <ArrowRight className="w-5 h-5" />
               </Link>
-              <Link href="/services" className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-gray-200 bg-[#252A3D] border border-white/10 rounded-2xl hover:border-[#00F5FF]/50 hover:text-[#00F5FF] transition-all shadow-sm">
+              <Link href="/services" className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-gray-200 bg-[#252A3D] border border-white/10 rounded-2xl hover:border-[#2DD4BF]/50 hover:text-[#2DD4BF] transition-all shadow-sm">
                 Explore Services
               </Link>
             </div>
             <div className="mt-12 flex flex-wrap gap-x-8 gap-y-3">
               {['AWS Advanced Tier Partner','FinOps Certified','SOC 2 Compliant','5-Star Support'].map(t => (
                 <div key={t} className="flex items-center gap-2 text-sm text-gray-400">
-                  <CheckCircle className="w-4 h-4 text-[#00F5FF]" />{t}
+                  <CheckCircle className="w-4 h-4 text-[#2DD4BF]" />{t}
                 </div>
               ))}
             </div>
@@ -79,7 +79,7 @@ export default function Home() {
       <section className="py-24 bg-[#1E2030]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-sm font-semibold text-[#00F5FF] uppercase tracking-widest mb-3">What We Do</p>
+            <p className="text-sm font-semibold text-[#2DD4BF] uppercase tracking-widest mb-3">What We Do</p>
             <h2 className="text-4xl font-bold text-white mb-4">Complete Cloud Financial Management</h2>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto">From AWS procurement to ongoing cost governance — every dimension of cloud financial operations.</p>
           </div>
@@ -110,8 +110,8 @@ export default function Home() {
               <div className="space-y-6">
                 {audiences.map((a) => (
                   <div key={a.role} className="flex gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-[#00F5FF]/10 flex items-center justify-center shrink-0">
-                      <a.icon className="w-5 h-5 text-[#00F5FF]" />
+                    <div className="w-10 h-10 rounded-xl bg-[#2DD4BF]/10 flex items-center justify-center shrink-0">
+                      <a.icon className="w-5 h-5 text-[#2DD4BF]" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-white mb-1">{a.role}</h4>
@@ -126,7 +126,7 @@ export default function Home() {
               <ul className="space-y-4">
                 {whyUs.map((w) => (
                   <li key={w} className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-[#00F5FF] shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#2DD4BF] shrink-0" />
                     <span className="text-gray-300 text-sm">{w}</span>
                   </li>
                 ))}
@@ -144,9 +144,9 @@ export default function Home() {
       <section className="py-20 bg-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-white mb-4">Ready to Optimize Your AWS Spend?</h2>
-          <p className="text-lg text-[#00F5FF] mb-10 max-w-xl mx-auto">Get a complimentary cloud cost assessment and discover your savings opportunity in 48 hours.</p>
+          <p className="text-lg text-[#2DD4BF] mb-10 max-w-xl mx-auto">Get a complimentary cloud cost assessment and discover your savings opportunity in 48 hours.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact?type=assessment" className="inline-flex items-center gap-2 px-8 py-4 text-sm font-semibold text-[#1E2030] bg-[#00F5FF] rounded-2xl hover:bg-[#00CCDD] transition-colors shadow-xl">
+            <Link href="/contact?type=assessment" className="inline-flex items-center gap-2 px-8 py-4 text-sm font-semibold text-[#1E2030] bg-[#2DD4BF] rounded-2xl hover:bg-[#14B8A6] transition-colors shadow-xl">
               Get Free Assessment <ArrowRight className="w-4 h-4" />
             </Link>
             <Link href="/services" className="inline-flex items-center gap-2 px-8 py-4 text-sm font-semibold text-white border border-white/20 rounded-2xl hover:bg-white/10 transition-colors">
