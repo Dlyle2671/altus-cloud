@@ -58,7 +58,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 bg-white border-y border-gray-100">
+      <section className="py-16 bg-[#F5ECD7] border-y border-stone-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((s) => (
@@ -72,7 +72,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-[#EDE0C8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-sm font-semibold text-blue-600 uppercase tracking-widest mb-3">What We Do</p>
@@ -81,7 +81,7 @@ export default function Home() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((s) => (
-              <div key={s.title} className="bg-white rounded-2xl p-6 border border-gray-100 card-hover">
+              <div key={s.title} className="bg-[#FDF6EC] rounded-2xl p-6 border border-stone-200 card-hover">
                 <div className={`w-12 h-12 rounded-xl ${s.light} flex items-center justify-center mb-5`}>
                   <s.icon className={`w-6 h-6 ${s.iconColor}`} />
                 </div>
@@ -96,7 +96,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-[#F5ECD7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -117,7 +117,7 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <div className="bg-hero rounded-3xl p-8 border border-blue-100">
+            <div className="bg-[#EDE0C8] rounded-3xl p-8 border border-stone-200">
               <h3 className="text-xl font-bold text-gray-900 mb-6">Why Altus Cloud</h3>
               <ul className="space-y-4">
                 {whyUs.map((w) => (
